@@ -15,8 +15,8 @@ export default async function handler(
 			},
 		],
 		mode: 'payment',
-		success_url: `http://localhost:3000/success?session_id={CHECKOUT_SESSION_ID}`,
-		cancel_url: 'http://localhost:3000',
+		success_url: `${process.env.BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+		cancel_url: `${process.env.BASE_URL}`,
 	})
 
 	res.status(200).json({ session: session.url })

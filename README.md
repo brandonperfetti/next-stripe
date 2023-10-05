@@ -27,6 +27,7 @@ NEXT_PUBLIC_TRIGGER_PUBLIC_API_KEY=your_trigger_public_api_key
 AIRTABLE_BASE_ID=your_airtable_base_id
 AIRTABLE_TABLE_ID=your_airtable_table_id
 AIRTABLE_TOKEN=your_airtable_token
+BASE_URL=http://localhost:3000
 ```
 
 Then run the development server:
